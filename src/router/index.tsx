@@ -1,7 +1,11 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import routes from './routes'
-function RouterComponent(props) {
+
+type RouterProps = {
+    children:React.ReactNode
+}
+function RouterComponent(props:RouterProps) : JSX.Element{
     return (
         <Router>
             {props.children}

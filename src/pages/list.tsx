@@ -1,6 +1,6 @@
 /** @format */
 
-function List(props) {
+function List() : JSX.Element{
     return <div className="List">List</div>
 }
 

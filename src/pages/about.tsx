@@ -1,11 +1,13 @@
-/** @format */
+import {Route} from 'react-router-dom'
 
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+type AboutProps = {
+    routes:any
+}
 
-function About(props) {
+function About(props:AboutProps): JSX.Element {
     return (
          <div className="About">
-      About 
+            About 
             {props.routes.map((item, index) => {
                 return   <Route key={index} exact path={item.path} component={item.component}></Route>
             })}

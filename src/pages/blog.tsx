@@ -1,6 +1,6 @@
 /** @format */
 
-function Blog(props) {
+function Blog(): JSX.Element {
     return <div className="Blog">Blog</div>
 }
 

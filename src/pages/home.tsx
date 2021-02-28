@@ -1,6 +1,6 @@
 /** @format */
 
-function Home(props) {
+function Home(): JSX.Element {
     return <div className="Home">Home</div>
 }
 

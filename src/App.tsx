@@ -3,7 +3,7 @@ import './App.css'
 import Router from '../src/router'
 import Nav from './components/Nav'
 
-function App() {
+function App(): JSX.Element {
     return (
         <div className="App">
             <Router>
