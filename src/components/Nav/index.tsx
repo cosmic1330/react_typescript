@@ -10,10 +10,10 @@ function Nav(): JSX.Element {
                 <Link to="/about">關於</Link>
             </li>
             <li>
-                <Link to="/about/blog">speak/</Link>
+                <Link to="/about/blog">About/</Link>
             </li>
             <li>
-                <Link to="/about/list">speak/english</Link>
+                <Link to="/about/list">About/List</Link>
             </li>
         </ul>
     )

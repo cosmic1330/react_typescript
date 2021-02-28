@@ -1,4 +1,17 @@
 import {Route} from 'react-router-dom'
+import styled from '@emotion/styled'
+
+const Button = styled.button`
+  padding: 32px;
+  background-color: hotpink;
+  font-size: 24px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: white;
+  }
+`
 
 type AboutProps = {
     routes:any
@@ -6,8 +19,8 @@ type AboutProps = {
 
 function About(props:AboutProps): JSX.Element {
     return (
-         <div className="About">
-            About 
+         <div className="About" >
+            <Button>About</Button> 
             {props.routes.map((item, index) => {
                 return   <Route key={index} exact path={item.path} component={item.component}></Route>
             })}

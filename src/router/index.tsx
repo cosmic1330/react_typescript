@@ -18,8 +18,8 @@ function RouterComponent(props:RouterProps) : JSX.Element{
                                 <Route
                                     exact
                                     key={index}
+                                    component={router.component}
                                     path={router.path}
-                                    render={props => <router.component {...props} routes={router.routes} />}
                                 />
                             )
                         } else {
