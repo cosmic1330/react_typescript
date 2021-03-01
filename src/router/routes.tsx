@@ -1,6 +1,6 @@
 /** @format */
 
-import Home from '../pages/home'
+import Home from 'src/pages/home'
 import About from '../pages/about'
 import Blog from '../pages/blog'
 import List from '../pages/list'
