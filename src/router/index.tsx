@@ -7,7 +7,7 @@ type RouterProps = {
 }
 function RouterComponent(props:RouterProps) : JSX.Element{
     return (
-        <Router>
+        <Router basename={process.env.REACT_APP_BASENAME}>
             {props.children}
 
             <div>
